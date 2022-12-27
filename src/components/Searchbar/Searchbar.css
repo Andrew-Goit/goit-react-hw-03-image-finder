@@ -2,7 +2,7 @@
   top: 0;
   left: 0;
   position: sticky;
-  z-index: 1100;
+  z-index: 10;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -29,13 +29,12 @@
   }
   
   .form > .input {
-    padding-left: 5px;
-  
+    font-size: 18px;
+    padding-left: 20px;
     border-radius: 0 6px 6px 0;
     width: 600px;
     border: none;
     outline: none;
-    
   }
   
   .form.hidden {
@@ -43,7 +42,7 @@
   }
   
   .search-btn {
-    width: 48px;
+    width: 58px;
     height: 48px;
     margin-left: auto;
     padding: 8px;

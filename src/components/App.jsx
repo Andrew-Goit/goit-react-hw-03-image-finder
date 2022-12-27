@@ -27,23 +27,6 @@ export class App extends Component {
     modalURL: '',
   };
 
-  // async componentDidMount() {
-  //   this.setState({ isLoading: true });
-  //   try {
-  //     const pictures = await fetchPictures(
-  //       this.state.searchQuery,
-  //       this.state.pageNumber
-  //     );
-  //     this.setState({ pictures });
-  //   } catch (error) {
-  //     this.setState({ error });
-  //     console.log(error);
-  //   } finally {
-  //     this.setState({ isLoading: false });
-  //     // console.log('dfegdh');
-  //   }
-  // }
-
   async componentDidUpdate(_, prevState) {
     if (
       this.state.searchQuery !== prevState.searchQuery ||
@@ -80,8 +63,11 @@ export class App extends Component {
   }
 
   formSubmitHandler = query => {
-    this.setState({ searchQuery: query, pageNumber: 1, pictures: [] });
-    // localStorage.setItem('pictures', JSON.stringify(this.state.pictures));
+    this.setState({ 
+      searchQuery: query, 
+      pageNumber: 1, 
+      pictures: [] 
+    })
   };
 
   imageClickHandler = url => {

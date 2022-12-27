@@ -222,11 +222,3 @@ img {
   background-color: #303f9f;
 }
 
-.gallery-wrap {
-  width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}

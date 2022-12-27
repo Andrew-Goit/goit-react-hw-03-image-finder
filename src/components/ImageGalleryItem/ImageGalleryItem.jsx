@@ -1,5 +1,4 @@
 import PropTypes from 'prop-types';
-
 import '../ImageGalleryItem/ImageGalleryItem.css';
 
 const ImageGalleryItem = props => {

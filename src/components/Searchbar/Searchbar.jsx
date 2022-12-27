@@ -6,14 +6,14 @@ import PropTypes from 'prop-types';
 export default class SearchBar extends Component {
   state = { query: '' };
 
-  handleSubmit = evt => {
-    evt.preventDefault();
+  handleSubmit = event => {
+    event.preventDefault();
     this.props.onSubmit(this.state.query);
     this.resetForm();
   };
 
-  handleChange = evt => {
-    const input = evt.currentTarget.value;
+  handleChange = event => {
+    const input = event.currentTarget.value;
     this.setState({ query: input });
   };
 
